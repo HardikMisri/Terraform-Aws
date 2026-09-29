@@ -1,0 +1,62 @@
+How to install Terraform
+
+macOS
+Step 1 — Check whether Homebrew is installed
+
+Open Terminal: brew --version
+
+If you see something like: Homebrew 4.x.x
+
+If you get 
+command not found: brew
+
+install Homebrew from its official website: https://brew.sh/
+
+Step 2 — Add HashiCorp's official Homebrew repository
+
+brew tap hashicorp/tap
+
+Step 3 — Install Terraform
+
+brew install hashicorp/tap/terraform
+
+Wait for installation to finish 
+
+Step 4 — Verify installation
+
+Run:
+
+terraform version
+
+You should see something similar to:
+
+Terraform v1.x.x
+on darwin_arm64
+
+Step 5 — Check where Terraform is installed
+which terraform
+
+You should get a path such as:
+
+/opt/homebrew/bin/terraform
+
+=======================================================
+Windows
+
+
+
+Recommended if you already use Chocolatey
+
+Open PowerShell as Administrator.
+
+Check Chocolatey: choco --version
+
+If it works, install Terraform: choco install terraform
+
+Verify
+terraform version
+
+Then:
+
+terraform -help
+
